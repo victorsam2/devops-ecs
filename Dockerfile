@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-LABEL maintainer "leandro"
+ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
     apt-get install -y apache2 php
 CMD /usr/sbin/apache2ctl -D FOREGROUND
