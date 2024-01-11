@@ -1,4 +1,5 @@
-FROM centos:latest
+
+FROM ubuntu:latest
 LABEL maintainer "leandro"
 RUN yum -y install httpd
 RUN yum -y install php
